@@ -7,13 +7,20 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <nav class="nav">
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="logo" href="#overview" aria-label="Course overview home">
+        ENT 540
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+      </label>
+      <nav class="nav-links">
         <a href="#overview">Overview</a>
         <a href="#schedule">Weekly Schedule</a>
         <a href="#readings">Readings</a>
-        <a href="#assignments">Assignments & Grading</a>
+        <a href="#assignments">Assignments &amp; Grading</a>
         <a href="#project">Final Project</a>
         <a href="#policies">Policies</a>
       </nav>
@@ -21,119 +28,175 @@
   </header>
 
   <section class="hero">
-    <div class="container grid" style="align-items:flex-end">
-      <div class="card" style="grid-column: span 8;">
-        <h1>ENT 540 · Negotiation — Sources & Uses of Power</h1>
-        <div class="small">15 weeks · 2×/week · 90 minutes each · Undergraduate</div>
+    <div class="container grid">
+      <div class="card hero-intro">
+        <p class="kicker">Negotiation &amp; Power</p>
+        <h1>ENT 540 · Sources &amp; Uses of Power</h1>
+        <div class="small hero-meta">15 weeks · 2×/week · 90 minutes · Undergraduate</div>
         <span class="badge">Entrepreneurship / Startups Focus</span>
-        <p class="small">Instructor: Domingos Santos · Email/Office Hours: TBA</p>
+        <p class="small">Instructor: Domingos Santos · Email &amp; Office Hours: TBA</p>
       </div>
-      <div class="card" style="grid-column: span 4;">
-        <div class="kicker">Course outcomes</div>
+      <div class="card hero-outcomes">
+        <div class="kicker">Course Outcomes</div>
         <ul class="small">
-          <li>Apply BATNA/ZOPA, value creation/claiming frameworks.</li>
-          <li>Diagnose and use sources of power ethically.</li>
-          <li>Negotiate co-founder splits, term sheets, sales, hiring, vendors.</li>
-          <li>Manage conflict; run multi-party negotiations.</li>
-          <li>Reflect on style, biases, and ethics.</li>
+          <li>Apply BATNA/ZOPA and value creation/claiming frameworks fluently.</li>
+          <li>Diagnose and deploy sources of power ethically across contexts.</li>
+          <li>Negotiate co-founder splits, term sheets, sales, hiring, and vendor deals.</li>
+          <li>Lead multi-party negotiations and manage high-stakes conflict.</li>
+          <li>Reflect on personal style, biases, and ethics with intention.</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section id="overview" class="container grid" style="margin-top:18px">
-    <div class="card" style="grid-column: span 7;">
-      <h2>Course Description</h2>
-      <p>Entrepreneurial success hinges on the ability to negotiate and wield power ethically in high-stakes, high-uncertainty environments. Through interactive lectures, role-play simulations, and top-tier cases, you’ll build a practical toolkit for startup negotiations with co-founders, investors, customers, hires, and partners.</p>
-      <blockquote>We emphasize principled, creative, and ethical agreements that build trust and long-term value.</blockquote>
-    </div>
-    <div class="card" style="grid-column: span 5;">
-      <h2>Meeting Pattern</h2>
-      <p class="small"><strong>Weeks:</strong> 15<br/>
-      <strong>Sessions:</strong> Twice per week<br/>
-      <strong>Length:</strong> 90 minutes per class<br/>
-      <strong>Assessment:</strong> Participation, reflection journals, case memos, in-class simulations, and a major final project (no exam).</p>
-    </div>
-  </section>
+  <main>
+    <section id="overview" class="container grid section">
+      <div class="card span-7">
+        <h2>Course Description</h2>
+        <p>Entrepreneurial success hinges on the ability to negotiate and wield power ethically in high-stakes, high-uncertainty environments. Through interactive lectures, role-play simulations, and top-tier cases, you’ll build a practical toolkit for startup negotiations with co-founders, investors, customers, hires, and partners.</p>
+        <blockquote>We emphasize principled, creative, and ethical agreements that build trust and long-term value.</blockquote>
+      </div>
+      <div class="card span-5">
+        <h2>Meeting Pattern</h2>
+        <p class="small"><strong>Weeks:</strong> 15<br />
+        <strong>Sessions:</strong> Twice per week<br />
+        <strong>Length:</strong> 90 minutes per class<br />
+        <strong>Assessment:</strong> Participation, reflection journals, case memos, in-class simulations, and a major final project (no exam).</p>
+      </div>
+    </section>
 
-  <section id="schedule" class="container" style="margin-top:18px">
-    <div class="card">
-      <h2>Weekly Schedule (Topics & Activities)</h2>
-      <div class="week"><h3>Week 1 • Intro to Startup Negotiation & Power</h3><p>Definitions, the 7-Element framework; diagnostic role-play.</p></div>
-      <div class="week"><h3>Week 2 • Distributive Bargaining (Claiming Value)</h3><p>Targets, reservation price, ZOPA, anchoring; <em>Bullard Houses</em> simulation.</p></div>
-      <div class="week"><h3>Week 3 • Integrative Bargaining (Creating Value)</h3><p>Interests vs. positions, option generation, packages; <em>New Recruit</em> multi-issue role-play.</p></div>
-      <div class="week"><h3>Week 4 • Sources of Power & Ethical Influence</h3><p>Bases of power; Cialdini’s principles; framing & persuasion drills.</p></div>
-      <div class="week"><h3>Week 5 • Styles, Emotions, & Biases</h3><p>Style self-assessment; <em>Beyond Reason</em> core concerns; bias traps.</p></div>
-      <div class="week"><h3>Week 6 • Co-Founder Agreements & Equity</h3><p>Equity splits, roles, vesting; HBS case + simulated founders’ negotiation.</p></div>
-      <div class="week"><h3>Week 7 • Fundraising & Term Sheets</h3><p>Valuation vs. control; contingent contracts; <em>Aerospace Investment</em> simulation.</p></div>
-      <div class="week"><h3>Week 8 • Sales & Corporate Partnerships</h3><p>Negotiating customer pilots, alliances; “dancing with elephants.”</p></div>
-      <div class="week"><h3>Week 9 • Hiring & Talent Offers</h3><p>Cash/equity compensation, role design; candidate-founder role-play.</p></div>
-      <div class="week"><h3>Week 10 • Suppliers & Cross-Cultural Deals</h3><p>Manufacturing/vendors; cultural dimensions; <em>MedLee</em> JV simulation.</p></div>
-      <div class="week"><h3>Week 11 • Conflict & Difficult Conversations</h3><p>Founders/board conflict; mediation; <em>Getting Past No</em> tactics.</p></div>
-      <div class="week"><h3>Week 12 • Multi-Party & Team Negotiations</h3><p>Coalitions, agenda setting, caucuses; team-on-team simulation.</p></div>
-      <div class="week"><h3>Week 13 • Ethics, Trust, & Power</h3><p>Boundaries of puffery vs. deception; negotiator’s code of ethics.</p></div>
-      <div class="week"><h3>Week 14 • Synthesis & Project Workshop</h3><p>Concept review; project coaching and rehearsal.</p></div>
-      <div class="week"><h3>Week 15 • Final Project Presentations</h3><p>Team presentations / live mini-sims; course wrap.</p></div>
-    </div>
-  </section>
+    <section id="schedule" class="container section">
+      <div class="card">
+        <h2>Weekly Schedule (Topics &amp; Activities)</h2>
+        <div class="week"><h3>Week 1 • Intro to Startup Negotiation &amp; Power</h3><p>Definitions, the 7-Element framework; diagnostic role-play.</p></div>
+        <div class="week"><h3>Week 2 • Distributive Bargaining (Claiming Value)</h3><p>Targets, reservation price, ZOPA, anchoring; <em>Bullard Houses</em> simulation.</p></div>
+        <div class="week"><h3>Week 3 • Integrative Bargaining (Creating Value)</h3><p>Interests vs. positions, option generation, packages; <em>New Recruit</em> multi-issue role-play.</p></div>
+        <div class="week"><h3>Week 4 • Sources of Power &amp; Ethical Influence</h3><p>Bases of power; Cialdini’s principles; framing &amp; persuasion drills.</p></div>
+        <div class="week"><h3>Week 5 • Styles, Emotions, &amp; Biases</h3><p>Style self-assessment; <em>Beyond Reason</em> core concerns; bias traps.</p></div>
+        <div class="week"><h3>Week 6 • Co-Founder Agreements &amp; Equity</h3><p>Equity splits, roles, vesting; HBS case + simulated founders’ negotiation.</p></div>
+        <div class="week"><h3>Week 7 • Fundraising &amp; Term Sheets</h3><p>Valuation vs. control; contingent contracts; <em>Aerospace Investment</em> simulation.</p></div>
+        <div class="week"><h3>Week 8 • Sales &amp; Corporate Partnerships</h3><p>Negotiating customer pilots, alliances; “dancing with elephants.”</p></div>
+        <div class="week"><h3>Week 9 • Hiring &amp; Talent Offers</h3><p>Cash/equity compensation, role design; candidate-founder role-play.</p></div>
+        <div class="week"><h3>Week 10 • Suppliers &amp; Cross-Cultural Deals</h3><p>Manufacturing/vendors; cultural dimensions; <em>MedLee</em> JV simulation.</p></div>
+        <div class="week"><h3>Week 11 • Conflict &amp; Difficult Conversations</h3><p>Founders/board conflict; mediation; <em>Getting Past No</em> tactics.</p></div>
+        <div class="week"><h3>Week 12 • Multi-Party &amp; Team Negotiations</h3><p>Coalitions, agenda setting, caucuses; team-on-team simulation.</p></div>
+        <div class="week"><h3>Week 13 • Ethics, Trust, &amp; Power</h3><p>Boundaries of puffery vs. deception; negotiator’s code of ethics.</p></div>
+        <div class="week"><h3>Week 14 • Synthesis &amp; Project Workshop</h3><p>Concept review; project coaching and rehearsal.</p></div>
+        <div class="week"><h3>Week 15 • Final Project Presentations</h3><p>Team presentations / live mini-sims; course wrap.</p></div>
+      </div>
+    </section>
 
-  <section id="readings" class="container" style="margin-top:18px">
-    <div class="card">
-      <h2>Required & Optional Readings (with Links)</h2>
-      <table class="table">
-        <thead><tr><th>Week</th><th>Reading</th><th>Link</th></tr></thead>
-        <tbody>
-          <tr><td>1</td><td><em>Getting to Yes</em></td><td><a href="https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/" target="_blank">Publisher</a></td></tr>
-          <tr><td>1</td><td>Susskind, “Successful Entrepreneurs Must Learn to Negotiate”</td><td><a href="https://lawrencesusskind.mit.edu/blog/successful-entrepreneurs-must-learn-negotiate/" target="_blank">MIT blog</a></td></tr>
-          <tr><td>2</td><td>Lewicki et al., <em>Essentials of Negotiation</em></td><td><a href="https://www.mheducation.com/highered/product/essentials-of-negotiation-lewicki.html" target="_blank">Textbook</a></td></tr>
-          <tr><td>2</td><td><em>Bullard Houses</em> Simulation</td><td><a href="https://www.pon.harvard.edu/shop/bullard-houses/" target="_blank">PON</a></td></tr>
-          <tr><td>4</td><td>Cialdini, “Harnessing the Science of Persuasion”</td><td><a href="https://hbr.org/2001/10/harnessing-the-science-of-persuasion" target="_blank">HBR</a></td></tr>
-          <tr><td>6</td><td>Wasserman, “The Founder’s Dilemma”</td><td><a href="https://hbr.org/2008/02/the-founders-dilemma" target="_blank">HBR</a></td></tr>
-          <tr><td>10</td><td>Salacuse, “Ten Ways Culture Affects Negotiating Style”</td><td><a href="https://direct.mit.edu/ngtn/article-pdf/14/3/221/2387018/j.1571-9979.1998.tb00162.x.pdf" target="_blank">PDF</a></td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+    <section id="readings" class="container section">
+      <div class="card">
+        <h2>Required &amp; Optional Readings (with Links)</h2>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead>
+              <tr><th>Week</th><th>Reading</th><th>Type</th><th>Link</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td><em>Getting to Yes</em> — Fisher, Ury, &amp; Patton</td><td>Required</td><td><a href="https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/" target="_blank" rel="noreferrer">Publisher</a></td></tr>
+              <tr><td>1</td><td>Susskind, “Successful Entrepreneurs Must Learn to Negotiate”</td><td>Required</td><td><a href="https://lawrencesusskind.mit.edu/blog/successful-entrepreneurs-must-learn-negotiate/" target="_blank" rel="noreferrer">MIT blog</a></td></tr>
+              <tr><td>1</td><td><em>The Art and Science of Negotiation</em> — Howard Raiffa</td><td>Optional</td><td><a href="https://www.hup.harvard.edu/books/9780674048133" target="_blank" rel="noreferrer">Harvard Press</a></td></tr>
+              <tr><td>2</td><td><em>Essentials of Negotiation</em> — Lewicki, Barry, &amp; Saunders</td><td>Required</td><td><a href="https://www.mheducation.com/highered/product/essentials-of-negotiation-lewicki.html" target="_blank" rel="noreferrer">Textbook</a></td></tr>
+              <tr><td>2</td><td><em>Bullard Houses</em> Simulation</td><td>Required</td><td><a href="https://www.pon.harvard.edu/shop/bullard-houses/" target="_blank" rel="noreferrer">PON</a></td></tr>
+              <tr><td>2</td><td><em>Never Split the Difference</em> — Chris Voss</td><td>Optional</td><td><a href="https://www.harpercollins.com/products/never-split-the-difference-chris-voss" target="_blank" rel="noreferrer">HarperCollins</a></td></tr>
+              <tr><td>3</td><td><em>Negotiation Genius</em> — Malhotra &amp; Bazerman</td><td>Required</td><td><a href="https://www.penguinrandomhouse.com/books/292730/negotiation-genius-by-deepak-malhotra-and-max-bazerman/" target="_blank" rel="noreferrer">Publisher</a></td></tr>
+              <tr><td>3</td><td>Lax &amp; Sebenius, “3-D Negotiation”</td><td>Optional</td><td><a href="https://hbr.org/2003/11/3-d-negotiation" target="_blank" rel="noreferrer">HBR</a></td></tr>
+              <tr><td>3</td><td><em>The Medici Effect</em> — Frans Johansson (for creative option generation)</td><td>Optional</td><td><a href="https://www.fransjohansson.com/medici-effect" target="_blank" rel="noreferrer">Author</a></td></tr>
+              <tr><td>4</td><td>Cialdini, “Harnessing the Science of Persuasion”</td><td>Required</td><td><a href="https://hbr.org/2001/10/harnessing-the-science-of-persuasion" target="_blank" rel="noreferrer">HBR</a></td></tr>
+              <tr><td>4</td><td><em>Influence, New &amp; Expanded</em> — Robert Cialdini</td><td>Optional</td><td><a href="https://www.harpercollins.com/products/influence-new-and-expanded-robert-b-cialdini" target="_blank" rel="noreferrer">HarperCollins</a></td></tr>
+              <tr><td>4</td><td>Adam Grant, “The Science of Persuasion” (WorkLife podcast)</td><td>Optional</td><td><a href="https://www.ted.com/podcasts/worklife" target="_blank" rel="noreferrer">TED</a></td></tr>
+              <tr><td>5</td><td><em>Beyond Reason</em> — Fisher &amp; Shapiro</td><td>Required</td><td><a href="https://www.penguinrandomhouse.com/books/53694/beyond-reason-by-roger-fisher-and-daniel-shapiro/" target="_blank" rel="noreferrer">Publisher</a></td></tr>
+              <tr><td>5</td><td>Shea &amp; Yeh, “Emotion &amp; the Negotiation Process”</td><td>Optional</td><td><a href="https://knowledge.insead.edu/blog/insead-blog/emotions-negotiation-process" target="_blank" rel="noreferrer">INSEAD</a></td></tr>
+              <tr><td>5</td><td><em>Thinking, Fast and Slow</em> — Daniel Kahneman (bias primer)</td><td>Optional</td><td><a href="https://us.macmillan.com/books/9780374533557/thinkingfastandslow" target="_blank" rel="noreferrer">Macmillan</a></td></tr>
+              <tr><td>6</td><td>Wasserman, “The Founder’s Dilemma”</td><td>Required</td><td><a href="https://hbr.org/2008/02/the-founders-dilemma" target="_blank" rel="noreferrer">HBR</a></td></tr>
+              <tr><td>6</td><td><em>Founders at Work</em> — Jessica Livingston (equity case studies)</td><td>Optional</td><td><a href="https://www.apress.com/gp/book/9781430210788" target="_blank" rel="noreferrer">Apress</a></td></tr>
+              <tr><td>6</td><td>Frankel &amp; Ajello, “Dynamic Founder Compensation”</td><td>Optional</td><td><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3081987" target="_blank" rel="noreferrer">SSRN</a></td></tr>
+              <tr><td>7</td><td><em>Term Sheets &amp; Valuations</em> — Feld &amp; Mendelson</td><td>Required</td><td><a href="https://www.wiley.com/en-us/Venture+Deals%3A+Be+Smarter+Than+Your+Lawyer+and+Venture+Capitalist%2C+5th+Edition-p-9781119594825" target="_blank" rel="noreferrer">Wiley</a></td></tr>
+              <tr><td>7</td><td>Lerner, Hardymon, &amp; Leamon, “Introduction to Private Equity”</td><td>Optional</td><td><a href="https://hbsp.harvard.edu/product/UV6705-PDF-ENG" target="_blank" rel="noreferrer">HBS</a></td></tr>
+              <tr><td>7</td><td><em>Secrets of Sand Hill Road</em> — Scott Kupor</td><td>Optional</td><td><a href="https://www.penguinrandomhouse.com/books/600670/secrets-of-sand-hill-road-by-scott-kupor/" target="_blank" rel="noreferrer">Penguin</a></td></tr>
+              <tr><td>8</td><td>Elad Gil, “How to Negotiate a Commercial Agreement”</td><td>Optional</td><td><a href="https://blog.eladgil.com/p/how-to-negotiate-a-commercial-agreement" target="_blank" rel="noreferrer">Blog</a></td></tr>
+              <tr><td>8</td><td>“Strategic Alliances” — McKinsey on Startups</td><td>Optional</td><td><a href="https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/start-up-alliance-management" target="_blank" rel="noreferrer">McKinsey</a></td></tr>
+              <tr><td>8</td><td>Case: <em>Align Technology: Invisalign</em> Sales Negotiation</td><td>Optional</td><td><a href="https://hbsp.harvard.edu/product/UV6955-PDF-ENG" target="_blank" rel="noreferrer">HBS</a></td></tr>
+              <tr><td>9</td><td>Burkus, “How to Negotiate a Job Offer”</td><td>Required</td><td><a href="https://hbr.org/2014/04/how-to-negotiate-a-job-offer" target="_blank" rel="noreferrer">HBR</a></td></tr>
+              <tr><td>9</td><td><em>Powerful</em> — Patty McCord (talent philosophy)</td><td>Optional</td><td><a href="https://www.penguinrandomhouse.com/books/561849/powerful-by-patty-mccord/" target="_blank" rel="noreferrer">Publisher</a></td></tr>
+              <tr><td>9</td><td>Case: <em>Dropbox: Hiring the Best Talent</em></td><td>Optional</td><td><a href="https://hbsp.harvard.edu/product/816004-PDF-ENG" target="_blank" rel="noreferrer">HBS</a></td></tr>
+              <tr><td>10</td><td>Salacuse, “Ten Ways Culture Affects Negotiating Style”</td><td>Required</td><td><a href="https://direct.mit.edu/ngtn/article-pdf/14/3/221/2387018/j.1571-9979.1998.tb00162.x.pdf" target="_blank" rel="noreferrer">MIT Press</a></td></tr>
+              <tr><td>10</td><td>Meyer, <em>The Culture Map</em></td><td>Optional</td><td><a href="https://erinmeyer.com/book/the-culture-map/" target="_blank" rel="noreferrer">Author</a></td></tr>
+              <tr><td>10</td><td>Case: <em>Huawei: Cross-Border Negotiations</em></td><td>Optional</td><td><a href="https://cases.insead.edu/publishing/case?ref=6117" target="_blank" rel="noreferrer">INSEAD</a></td></tr>
+              <tr><td>11</td><td>Ury, <em>Getting Past No</em></td><td>Required</td><td><a href="https://www.randomhousebooks.com/books/190757/" target="_blank" rel="noreferrer">Random House</a></td></tr>
+              <tr><td>11</td><td>Stone, Patton, &amp; Heen, <em>Difficult Conversations</em></td><td>Optional</td><td><a href="https://www.penguinrandomhouse.com/books/176469/difficult-conversations-by-douglas-stone-bruce-patton-sheila-heen/" target="_blank" rel="noreferrer">Publisher</a></td></tr>
+              <tr><td>11</td><td>Kolb &amp; Williams, “Shadow Negotiations”</td><td>Optional</td><td><a href="https://hbr.org/2000/03/the-shadow-negotiation" target="_blank" rel="noreferrer">HBR</a></td></tr>
+              <tr><td>12</td><td>Heen &amp; Stone, “Team Negotiation Skills”</td><td>Optional</td><td><a href="https://www.vitalsmarts.com/resource/team-negotiations/" target="_blank" rel="noreferrer">VitalSmarts</a></td></tr>
+              <tr><td>12</td><td>Case: <em>Chadwick, Inc.: The Road to BK</em> (multi-party)</td><td>Optional</td><td><a href="https://www.pon.harvard.edu/shop/chadwick-inc-the-road-to-bk/" target="_blank" rel="noreferrer">PON</a></td></tr>
+              <tr><td>12</td><td>Raiffa, Richardson, &amp; Metcalfe, <em>Negotiation Analysis</em></td><td>Optional</td><td><a href="https://www.hup.harvard.edu/books/9780674017641" target="_blank" rel="noreferrer">Harvard Press</a></td></tr>
+              <tr><td>13</td><td>Tenbrunsel &amp; Thomas, “Ethical Decision Making in Negotiations”</td><td>Required</td><td><a href="https://www.pon.harvard.edu/daily/negotiation-skills-daily/negotiation-ethics/" target="_blank" rel="noreferrer">PON</a></td></tr>
+              <tr><td>13</td><td>Sezer, Gino, &amp; Bazerman, “Ethical Blind Spots”</td><td>Optional</td><td><a href="https://hbr.org/2015/04/the-hidden-costs-of-dishonesty" target="_blank" rel="noreferrer">HBR</a></td></tr>
+              <tr><td>13</td><td><em>The Honest Truth About Dishonesty</em> — Dan Ariely</td><td>Optional</td><td><a href="https://www.harpercollins.com/products/the-honest-truth-about-dishonesty-dan-ariely" target="_blank" rel="noreferrer">HarperCollins</a></td></tr>
+              <tr><td>14</td><td>Lax &amp; Sebenius, “Deal Design &amp; Setup”</td><td>Optional</td><td><a href="https://www.hbs.edu/faculty/Pages/item.aspx?num=25838" target="_blank" rel="noreferrer">HBS</a></td></tr>
+              <tr><td>14</td><td><em>Creative Negotiation</em> — Stevenson &amp; Sillars</td><td>Optional</td><td><a href="https://www.routledge.com/Creative-Negotiation/Sillars-Stevenson/p/book/9781138651538" target="_blank" rel="noreferrer">Routledge</a></td></tr>
+              <tr><td>15</td><td>MIT Sloan, “Capstone Negotiation Lab Playbook”</td><td>Optional</td><td><a href="https://mitsloan.mit.edu/ideas-made-to-matter/negotiation" target="_blank" rel="noreferrer">MIT Sloan</a></td></tr>
+              <tr><td>15</td><td>IDEO, “Storyboard Your Negotiation Debrief”</td><td>Optional</td><td><a href="https://www.ideou.com/blogs/inspiration/storyboarding" target="_blank" rel="noreferrer">IDEO</a></td></tr>
+              <tr><td>All</td><td>PON Great Negotiator Case Archive</td><td>Optional</td><td><a href="https://www.pon.harvard.edu/shop/category/great-negotiator/" target="_blank" rel="noreferrer">PON</a></td></tr>
+              <tr><td>All</td><td>StartUp Podcast, “Equity &amp; Founder Conflict” Episodes</td><td>Optional</td><td><a href="https://gimletmedia.com/shows/startup" target="_blank" rel="noreferrer">Gimlet</a></td></tr>
+              <tr><td>All</td><td>MasterClass, “Chris Voss Teaches the Art of Negotiation”</td><td>Optional</td><td><a href="https://www.masterclass.com/classes/chris-voss-teaches-the-art-of-negotiation" target="_blank" rel="noreferrer">MasterClass</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
 
-  <section id="assignments" class="container" style="margin-top:18px">
-    <div class="card">
-      <h2>Assignments & Grading</h2>
-      <ul>
-        <li><strong>Participation – 20%</strong></li>
-        <li><strong>Reflective Journals (3) – 15%</strong></li>
-        <li><strong>Case Memos (2) – 15%</strong></li>
-        <li><strong>In-Class Sim Performance – 10%</strong></li>
-        <li><strong>Final Project – 40%</strong></li>
-      </ul>
-      <p class="small">A-level work = rigorous analysis + creative insight + clear application of frameworks.</p>
-    </div>
-  </section>
+    <section id="assignments" class="container section">
+      <div class="card">
+        <h2>Assignments &amp; Grading</h2>
+        <ul>
+          <li><strong>Participation – 20%</strong></li>
+          <li><strong>Reflective Journals (3) – 15%</strong></li>
+          <li><strong>Case Memos (2) – 15%</strong></li>
+          <li><strong>In-Class Sim Performance – 10%</strong></li>
+          <li><strong>Final Project – 40%</strong></li>
+        </ul>
+        <p class="small">A-level work = rigorous analysis + creative insight + clear application of frameworks.</p>
+      </div>
+    </section>
 
-  <section id="project" class="container" style="margin-top:18px">
-    <div class="card">
-      <h2>Final Project</h2>
-      <ol>
-        <li>Create a negotiation case & role-play (background + roles + run-through).</li>
-        <li>Or an in-depth case study & playbook with practical startup lessons.</li>
-      </ol>
-      <p><strong>Milestones:</strong> Week 6 topic proposal · Week 10 outline · Week 15 presentation.</p>
-    </div>
-  </section>
+    <section id="project" class="container section">
+      <div class="card">
+        <h2>Final Project</h2>
+        <ol>
+          <li>Create a negotiation case &amp; role-play (background + roles + run-through).</li>
+          <li>Or craft an in-depth case study &amp; playbook with practical startup lessons.</li>
+        </ol>
+        <p><strong>Milestones:</strong> Week 6 topic proposal · Week 10 outline · Week 15 presentation.</p>
+      </div>
+    </section>
 
-  <section id="policies" class="container" style="margin-top:18px">
-    <div class="card">
-      <h2>Policies</h2>
-      <ul>
-        <li><strong>Attendance:</strong> Required for simulations.</li>
-        <li><strong>Confidentiality:</strong> Respect all role instructions.</li>
-        <li><strong>Academic integrity:</strong> Cite sources; act ethically.</li>
-      </ul>
-    </div>
-  </section>
+    <section id="policies" class="container section">
+      <div class="card">
+        <h2>Policies</h2>
+        <ul>
+          <li><strong>Attendance:</strong> Required for simulations.</li>
+          <li><strong>Confidentiality:</strong> Respect all role instructions.</li>
+          <li><strong>Academic Integrity:</strong> Cite sources; act ethically.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
-    <div class="container small">
-     Negotiationion    </div>
+    <div class="container small">Negotiation · Sources &amp; Uses of Power · ENT 540</div>
   </footer>
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        if (navToggle) {
+          navToggle.checked = false;
+        }
+      });
+    });
+  </script>
 </body>
 </html>
